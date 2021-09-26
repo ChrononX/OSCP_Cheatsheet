@@ -15,3 +15,6 @@ MONA COMMANDS
 #find jmp
 !mona jmp -r esp -cpb "\x00"
 ------------------------------------------
+#find the JMP ESP memory address within the DLL
+!mona find -s "\xff\xe4" -m <dllname>.dll
+------------------------------------------
