@@ -1,0 +1,22 @@
+The x86 architecture does contain 8 general registers that are used to store data and then can address that point to other positions in the memory
+EBP (base pointer)
+ESP (stack pointer)
+EAX (accumulator)
+EBX (base)
+ECX (counter)
+EDX (data)
+EDI (destination index)
+ESI (source index)
+
+
+EIP: Extended Instruction Pointer. This is a read-only register and does contain the address of the next instruction to be executed (tells the CPU what to do next).
+ESP: Extended Stack Pointer. Points to the top of the stack (at any time) at the lower memory location.
+EBP: Extended Base Stack Pointer. Points to higher address (last item) at the bottom of the stack.
+
+---------------------------> Common Bad Chars <---------------------------
+0x00     NULL (\0)
+0x09     Tab (\t)
+0x0a     Line Feed (\n)
+0x0d     Carriage Return (\r)
+0xff     Form Feed (\f)
+
